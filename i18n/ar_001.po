@@ -1,0 +1,126 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* leave_custom
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-17 12:26+0000\n"
+"PO-Revision-Date: 2025-08-17 12:26+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: leave_custom
+#: model:ir.actions.act_window,name:leave_custom.action_leave_custom_list
+#: model:ir.ui.menu,name:leave_custom.menu_leave_custom_list
+msgid "All Employee Time Off"
+msgstr "جميع إجازات الموظف"
+
+#. module: leave_custom
+#: model:ir.model.fields.selection,name:leave_custom.selection__hr_leave__state__validate
+msgid "Approved"
+msgstr "تمت الموافقة "
+
+#. module: leave_custom
+#: model:ir.model.fields.selection,name:leave_custom.selection__hr_leave__state__cancel
+msgid "Cancelled"
+msgstr "تم الإلغاء "
+
+#. module: leave_custom
+#: model:ir.model.fields,field_description:leave_custom.field_hr_leave__name
+msgid "Description"
+msgstr "الوصف"
+
+#. module: leave_custom
+#: model:ir.model.fields,field_description:leave_custom.field_hr_leave__duration_display
+msgid "Duration"
+msgstr "(الأيام/الساعات) المطلوبة  "
+
+#. module: leave_custom
+#: model:ir.model.fields,field_description:leave_custom.field_hr_leave__employee_id
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: leave_custom
+#: model:ir.model.fields,field_description:leave_custom.field_hr_leave__date_to
+msgid "End Date"
+msgstr "تاريخ الانتهاء"
+
+#. module: leave_custom
+#: model:ir.model.fields,help:leave_custom.field_hr_leave__duration_display
+msgid ""
+"Field allowing to see the leave request duration in days or hours depending "
+"on the leave_type_request_unit"
+msgstr ""
+"حقل يتيح لك رؤية مدة طلبات الإجازات بالأيام أو الساعات بناءً على "
+"leave_type_request_unit "
+
+#. module: leave_custom
+#: model:ir.ui.menu,name:leave_custom.menu_leave_custom_root
+msgid "Leave Custom"
+msgstr "إدارة الإجازات المخصصة"
+
+
+#. module: leave_custom
+#: model:ir.model.fields.selection,name:leave_custom.selection__hr_leave__state__refuse
+msgid "Refused"
+msgstr "تم الرفض "
+
+#. module: leave_custom
+#: model:ir.model.fields.selection,name:leave_custom.selection__hr_leave__state__validate1
+msgid "Second Approval"
+msgstr "الموافقة الثانية"
+
+#. module: leave_custom
+#: model:ir.model.fields,field_description:leave_custom.field_hr_leave__date_from
+msgid "Start Date"
+msgstr "تاريخ البدء "
+
+#. module: leave_custom
+#: model:ir.model.fields,field_description:leave_custom.field_hr_leave__state
+msgid "Status"
+msgstr "الحالة"
+
+#. module: leave_custom
+#: model:ir.model.fields,help:leave_custom.field_hr_leave__state
+msgid ""
+"The status is set to 'To Submit', when a time off request is created.\n"
+"The status is 'To Approve', when time off request is confirmed by user.\n"
+"The status is 'Refused', when time off request is refused by manager.\n"
+"The status is 'Approved', when time off request is approved by manager."
+msgstr ""
+"يتم تعين الحالة إلى 'للإرسال'، عندما يتم إنشاء طلب إجازة.\n"
+"تكون الحالة 'للموافقة'، عندما تتم الموافقة على طلب الإجازة من قِبَل المستخدم.\n"
+"تكون الحالة 'تم الرفض'، عندما يتم رفض طلب الإجازة من قِبَل المدير.\n"
+"تكون الحالة 'تمت الموافقة'، عندما تتم الموافقة على طبي الإجازة من قِبَل المدير."
+
+#. module: leave_custom
+#: model:ir.model,name:leave_custom.model_hr_leave
+msgid "Time Off"
+msgstr "الإجازات "
+
+#. module: leave_custom
+#: model_terms:ir.ui.view,arch_db:leave_custom.view_hr_leave_tree
+msgid "Time Off Requests"
+msgstr "طلبات الإجازة"
+
+#. module: leave_custom
+#: model:ir.model.fields,field_description:leave_custom.field_hr_leave__holiday_status_id
+msgid "Time Off Type"
+msgstr "نوع الإجازة "
+
+#. module: leave_custom
+#: model:ir.model.fields.selection,name:leave_custom.selection__hr_leave__state__confirm
+msgid "To Approve"
+msgstr "بانتظار الموافقة "
+
+#. module: leave_custom
+#. odoo-python
+#: code:addons/leave_custom/models/hr_leave.py:0
+msgid "An approved leave cannot be deleted."
+msgstr "لا يمكن حذف إجازة تمت الموافقة عليها."

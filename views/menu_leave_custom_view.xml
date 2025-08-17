@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="view_hr_leave_tree" model="ir.ui.view">
+        <field name="name">hr.leave.list</field>
+        <field name="model">hr.leave</field>
+        <field name="arch" type="xml">
+            <list string="Time Off Requests">
+                <field name="employee_id"/>
+                <field name="holiday_status_id"/>
+                <field name="name"/>
+                <field name="date_from"/>
+                <field name="date_to"/>
+                <field name="duration_display"/>
+                <field name="state"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_leave_custom_list" model="ir.actions.act_window">
+        <field name="name">All Employee Time Off</field>
+        <field name="res_model">hr.leave</field>
+        <field name="view_mode">list</field>
+        <field name="domain">[]</field>
+    </record>
+
+    <menuitem
+            id="menu_leave_custom_root"
+            name="Leave Custom"
+            parent="hr_holidays.menu_hr_holidays_root"
+            sequence="100"/>
+
+    <menuitem
+            id="menu_leave_custom_list"
+            name="All Employee Time Off"
+            parent="menu_leave_custom_root"
+            action="action_leave_custom_list"
+            sequence="10"/>
+
+</odoo>
