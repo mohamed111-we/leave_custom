@@ -34,6 +34,13 @@ class HolidaysRequest(models.Model):
         self._cr.commit()
         return True
 
+
+    def re_caculate(self):
+        for rec in self:
+            pass
+
+
+
     # def unlink(self):
     #     for leave in self:
     #         if leave.state == 'validate':
