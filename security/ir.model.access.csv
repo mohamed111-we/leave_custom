@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_leave_report_balances_wizard,access_leave_report_balances_wizard,model_leave_report_balances_wizard,,1,1,1,1
+access_report_leave_balance_employee,access_report_leave_balance_employee,model_report_leave_balance_employee,,1,1,1,1

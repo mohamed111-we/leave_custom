@@ -9,10 +9,19 @@
     'category': 'Human Resources',
     'author': 'Mohamed Yehya',
     'website': 'https://yourcompany.com',
-    'depends': ['base','hr_holidays', 'hr'],
+    'depends': ['base', 'hr_holidays', 'hr'],
     'data': [
-        'views/menu_leave_custom_view.xml',
+        'security/ir.model.access.csv',
+        'report/leave_vacation_balances_all_employees.xml',
+        'report/report_balance_leave_employee.xml',
+        'wizard/leave_vacation_balances_all_employees_wizard.xml',
     ],
+    'assets': {
+        'web.assets_backend': [
+            'leave_custom/static/src/css/style.css',
+        ],
+    },
+
     'installable': True,
     'application': True,
     'auto_install': False,

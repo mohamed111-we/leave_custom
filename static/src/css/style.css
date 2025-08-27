@@ -1,0 +1,5 @@
+.o_list_view.report-leave-balance-employee-view th[data-name="allocated_days"],
+.o_list_view.report-leave-balance-employee-view th[data-name="taken_days"],
+.o_list_view.report-leave-balance-employee-view th[data-name="balance_days"] {
+    min-width: 200px !important;
+}
