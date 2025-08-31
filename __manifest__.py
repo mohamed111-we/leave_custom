@@ -7,13 +7,10 @@
         including leave requests, approvals, leave types, and tracking.
     """,
     'category': 'Human Resources',
-    'author': 'Mohamed Yehya',
-    'website': 'https://yourcompany.com',
+    'author': 'Eng.Mathany Saad',
     'depends': ['base', 'hr_holidays', 'hr'],
     'data': [
         'security/ir.model.access.csv',
-        'report/leave_vacation_balances_all_employees.xml',
-        'report/report_balance_leave_employee.xml',
         'wizard/leave_vacation_balances_all_employees_wizard.xml',
     ],
     'assets': {

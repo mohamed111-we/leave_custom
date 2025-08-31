@@ -15,3 +15,5 @@ class HolidaysRequest(models.Model):
             record.invalidate_recordset()
         self._cr.commit()
         return True
+
+

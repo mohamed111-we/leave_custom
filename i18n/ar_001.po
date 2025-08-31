@@ -1,4 +1,3 @@
-
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* leave_custom
@@ -7,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-27 20:11+0000\n"
-"PO-Revision-Date: 2025-08-27 20:11+0000\n"
+"POT-Creation-Date: 2025-08-31 13:48+0000\n"
+"PO-Revision-Date: 2025-08-31 13:48+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -17,67 +16,9 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: leave_custom
-#: model:ir.actions.act_window,name:leave_custom.action_leave_report_balances_wizard
-msgid "Generate Leave Balances Report"
-msgstr "توليد تقرير أرصدة الإجازات"
-
-
-
-
-
-
-
-
-#. module: leave_custom
-#: model:ir.actions.report,print_report_name:leave_custom.action_leave_report_balances
-msgid "Leave Balances Report"
-msgstr "تقرير أرصدة الإجازات"
-
-#. module: leave_custom
-#: model:ir.model.fields.selection,name:leave_custom.selection__leave_report_balances_wizard__state_filter__all
-msgid "All Statuses"
-msgstr "جميع الحالات"
-
-#. module: leave_custom
 #: model:ir.model.fields,field_description:leave_custom.field_report_leave_balance_employee__allocated_days
 msgid "Allocated Balance"
 msgstr "الرصيد المخصص"
-
-#. module: leave_custom
-#: model:leave_custom
-msgid "No leaves found for the selected criteria."
-msgstr "لا توجد إجازات للمعايير المحددة."
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#. module: leave_custom
-#. odoo-python
-#: code:addons/leave_custom/models/hr_leave.py:0
-msgid "An approved leave cannot be deleted."
-msgstr "لا يمكن حذف إجازة تم الموافقة عليها."
-
-#. module: leave_custom
-#: model:ir.model.fields.selection,name:leave_custom.selection__leave_report_balances_wizard__state_filter__validate
-msgid "Approved"
-msgstr "موافق عليها"
 
 #. module: leave_custom
 #: model:ir.actions.act_window,name:leave_custom.report_balance_leave_employee_action
@@ -117,25 +58,10 @@ msgid "Display Name"
 msgstr "الاسم الظاهر"
 
 #. module: leave_custom
-#: model_terms:ir.ui.view,arch_db:leave_custom.leave_vacation_balances_all_employees
-msgid "Duration"
-msgstr "المدة"
-
-#. module: leave_custom
 #: model:ir.model.fields,field_description:leave_custom.field_report_leave_balance_employee__emp_id
 #: model_terms:ir.ui.view,arch_db:leave_custom.report_balance_leave_employee_search
 msgid "Employee"
 msgstr "الموظف"
-
-#. module: leave_custom
-#: model_terms:ir.ui.view,arch_db:leave_custom.leave_vacation_balances_all_employees
-msgid "Employee Leave Report"
-msgstr "تقرير إجازات الموظف"
-
-#. module: leave_custom
-#: model_terms:ir.ui.view,arch_db:leave_custom.leave_vacation_balances_all_employees
-msgid "Employee Name"
-msgstr "اسم الموظف"
 
 #. module: leave_custom
 #: model:ir.model.fields,field_description:leave_custom.field_leave_report_balances_wizard__employee_ids
@@ -143,24 +69,18 @@ msgid "Employees"
 msgstr "الموظفون"
 
 #. module: leave_custom
-#: model_terms:ir.ui.view,arch_db:leave_custom.leave_vacation_balances_all_employees
-msgid "End Date"
-msgstr "تاريخ الانتهاء"
-
-#. module: leave_custom
-#: model:ir.model.fields,field_description:leave_custom.field_leave_report_balances_wizard__date_from
-msgid "From Date"
-msgstr "من تاريخ"
-
-#. module: leave_custom
 #: model:ir.model.fields,field_description:leave_custom.field_report_leave_balance_employee__gender
-#: model_terms:ir.ui.view,arch_db:leave_custom.report_balance_leave_employee_search
 msgid "Gender"
-msgstr "الجنس"
+msgstr "جنس"
 
 #. module: leave_custom
 #: model:ir.ui.menu,name:leave_custom.menu_leave_balances_report_wizard
 msgid "Generate Balances Leave Report"
+msgstr "توليد تقرير أرصدة الإجازات"
+
+#. module: leave_custom
+#: model:ir.actions.act_window,name:leave_custom.action_leave_report_balances_wizard
+msgid "Generate Leave Balances Report"
 msgstr "توليد تقرير أرصدة الإجازات"
 
 #. module: leave_custom
@@ -217,21 +137,15 @@ msgid "Leave Report Balances Wizard"
 msgstr "معالج أرصدة تقرير الإجازات"
 
 #. module: leave_custom
-#: model:ir.model.fields,field_description:leave_custom.field_leave_report_balances_wizard__state_filter
-msgid "Leave Status"
-msgstr "حالة الإجازة"
-
-#. module: leave_custom
-#: model_terms:ir.ui.view,arch_db:leave_custom.leave_vacation_balances_all_employees
-msgid "Leave Status Filter:"
-msgstr "تصفية حسب حالة الإجازة:"
-
-#. module: leave_custom
 #: model:ir.model.fields,field_description:leave_custom.field_report_leave_balance_employee__leave_type_id
-#: model_terms:ir.ui.view,arch_db:leave_custom.leave_vacation_balances_all_employees
 #: model_terms:ir.ui.view,arch_db:leave_custom.report_balance_leave_employee_search
 msgid "Leave Type"
 msgstr "نوع الإجازة"
+
+#. module: leave_custom
+#: model:ir.model.fields,field_description:leave_custom.field_leave_report_balances_wizard__leave_type_ids
+msgid "Leave Types"
+msgstr "انواع الاجازات"
 
 #. module: leave_custom
 #: model:ir.model.fields,field_description:leave_custom.field_report_leave_balance_employee__country_id
@@ -239,20 +153,10 @@ msgid "Nationality"
 msgstr "الجنسية"
 
 #. module: leave_custom
-#: model_terms:ir.ui.view,arch_db:leave_custom.leave_vacation_balances_all_employees
-msgid "No leave records found for the selected criteria (inside template)."
-msgstr "لا توجد سجلات إجازات للمعايير المحددة (داخل القالب)."
-
-#. module: leave_custom
-#: model:ir.model.fields.selection,name:leave_custom.selection__leave_report_balances_wizard__report_type__pdf
-msgid "PDF"
-msgstr "PDF"
-
-
-#. module: leave_custom
-#: model:ir.model.fields.selection,name:leave_custom.selection__leave_report_balances_wizard__state_filter__refuse
-msgid "Refused"
-msgstr "مرفوضة"
+#. odoo-python
+#: code:addons/leave_custom/wizard/leave_vacation_balances_all_employees_wizard.py:0
+msgid "No leave balance records found for the selected criteria."
+msgstr "لم يتم العثور على سجلات رصيد الإجازات للمعايير المحددة."
 
 #. module: leave_custom
 #: model:ir.model.fields,field_description:leave_custom.field_report_leave_balance_employee__balance_days
@@ -260,68 +164,11 @@ msgid "Remaining Balance"
 msgstr "الرصيد المتبقي"
 
 #. module: leave_custom
-#: model_terms:ir.ui.view,arch_db:leave_custom.leave_vacation_balances_all_employees
-msgid "Report Generated From:"
-msgstr "تم إنشاء التقرير من:"
-
-#. module: leave_custom
-#: model:ir.model.fields,field_description:leave_custom.field_leave_report_balances_wizard__report_type
-msgid "Report Type"
-msgstr "نوع التقرير"
-
-#. module: leave_custom
-#: model_terms:ir.ui.view,arch_db:leave_custom.leave_vacation_balances_all_employees
-msgid "Selected Employees:"
-msgstr "الموظفون المختارون:"
-
-#. module: leave_custom
-#: model_terms:ir.ui.view,arch_db:leave_custom.leave_vacation_balances_all_employees
-msgid "Start Date"
-msgstr "تاريخ البدء"
-
-#. module: leave_custom
-#: model_terms:ir.ui.view,arch_db:leave_custom.leave_vacation_balances_all_employees
-msgid "Status"
-msgstr "الحالة"
-
-#. module: leave_custom
 #: model:ir.model.fields,field_description:leave_custom.field_report_leave_balance_employee__taken_days
 msgid "Taken Leaves"
 msgstr "الإجازات المأخوذة"
 
 #. module: leave_custom
-#: model:ir.model,name:leave_custom.model_hr_leave
-msgid "Time Off"
-msgstr "الإجازات"
-
-#. module: leave_custom
-#: model:ir.model.fields.selection,name:leave_custom.selection__leave_report_balances_wizard__state_filter__confirm
-msgid "To Approve"
-msgstr "في انتظار الموافقة"
-
-#. module: leave_custom
-#: model:ir.model.fields,field_description:leave_custom.field_leave_report_balances_wizard__date_to
-msgid "To Date"
-msgstr "إلى تاريخ"
-
-#. module: leave_custom
-#: model_terms:ir.ui.view,arch_db:leave_custom.leave_vacation_balances_all_employees
-msgid "To:"
-msgstr "إلى:"
-
-#. module: leave_custom
-#: model:ir.actions.report,name:leave_custom.action_leave_report_balances
 #: model:ir.ui.menu,name:leave_custom.report_balance_employee_leave_menu_root
 msgid "Vacation Balances For All Employees"
 msgstr "أرصدة الإجازات لجميع الموظفين"
-
-#. module: leave_custom
-#: model:ir.model.fields.selection,name:leave_custom.selection__leave_report_balances_wizard__report_type__xlsx
-msgid "XLSX"
-msgstr "إكسل (XLSX)"
-
-#. module: leave_custom
-#: model:ir.model,name:leave_custom.model_report_leave_custom_leave_vacation_balances_all_employees
-msgid "leave Custom"
-msgstr "إجازات مخصصة"
-

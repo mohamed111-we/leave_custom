@@ -1,46 +1,45 @@
-from odoo import models, fields
+from odoo import models, fields, _
 from odoo.exceptions import UserError
+import logging
 
 
 class LeaveReportBalancesWizard(models.TransientModel):
     _name = 'leave.report.balances.wizard'
     _description = 'Leave Report Balances Wizard'
 
-    employee_ids = fields.Many2many(
-        'hr.employee',
-        string='Employees',
-        required=True
-    )
-    date_from = fields.Date(string='From Date')
-    date_to = fields.Date(string='To Date')
-    report_type = fields.Selection([
-        ('pdf', 'PDF'),
-        ('xlsx', 'XLSX'),
-    ], string='Report Type', default='pdf')
-    state_filter = fields.Selection([
-        ('validate', 'Approved'),
-        ('all', 'All Statuses'),
-        ('confirm', 'To Approve'),
-        ('refuse', 'Refused'),
-    ], string='Leave Status', default='validate')
-
+    employee_ids = fields.Many2many('hr.employee', string='Employees')
+    leave_type_ids = fields.Many2many('hr.leave.type', string='Leave Types')
 
     def action_generate_report(self):
         self.ensure_one()
-        domain = [('employee_id', 'in', self.employee_ids.ids)]
-        print('domain for employee=====>> ', domain)
 
-        if self.state_filter != 'all':
-            domain.append(('state', '=', self.state_filter))
+        report_domain = []
+        if self.employee_ids:
+            report_domain.append(('employee_id', 'in', self.employee_ids.ids))
+        if self.leave_type_ids:
+            report_domain.append(('holiday_status_id', 'in', self.leave_type_ids.ids))
 
-        if self.date_from:
-            domain.append(('date_from', '<=', self.date_to))
-
-        if self.date_to:
-            domain.append(('date_to', '>=', self.date_from))
-
-        leaves = self.env['hr.leave'].search(domain)
-        print('domain========================>> ',domain)
+        leaves = self.env['hr.leave'].search(report_domain)
 
         if not leaves:
-            raise UserError("No leaves found for the selected criteria.")
+            raise UserError(_("No leave records found."))
+
+        print("==== Leave Report ====")
+        for leave in leaves:
+            print("Employee: %s | Type: %s | From: %s | To: %s | Days: %s | State: %s" %
+                  (leave.employee_id.name,
+                   leave.holiday_status_id.name,
+                   leave.date_from,
+                   leave.date_to,
+                   leave.number_of_days,
+                   leave.state))
+        print("==== End of Report ====")
+
+        return {
+            'name': _('Leave Report'),
+            'type': 'ir.actions.act_window',
+            'res_model': 'hr.leave',
+            'view_mode': 'list,form',
+            'domain': report_domain,
+            'target': 'current',
+        }

@@ -6,10 +6,7 @@
             <form string="Generate Leave Report">
                 <group>
                     <field name="employee_ids" widget="many2many_tags"/>
-                    <field name="date_from"/>
-                    <field name="date_to"/>
-                    <field name="state_filter"/>
-                    <field name="report_type"/>
+                    <field name="leave_type_ids" widget="many2many_tags"/>
                 </group>
                 <footer>
                     <button name="action_generate_report" string="Generate Report" type="object" class="btn-primary"/>
@@ -19,14 +16,12 @@
         </field>
     </record>
 
-
     <record id="action_leave_report_balances_wizard" model="ir.actions.act_window">
-        <field name="name">"Generate Leave Balances Report</field>
+        <field name="name">Generate Leave Balances Report</field>
         <field name="res_model">leave.report.balances.wizard</field>
         <field name="view_mode">form</field>
-         <field name="target">new</field>
+        <field name="target">new</field>
     </record>
-
 
     <menuitem id="menu_leave_balances_report_wizard"
               name="Generate Balances Leave Report"
