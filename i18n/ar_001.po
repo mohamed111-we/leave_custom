@@ -49,12 +49,12 @@ msgstr "الموظفون"
 #. module: leave_custom
 #: model:ir.ui.menu,name:leave_custom.menu_leave_balances_report_wizard
 msgid "Generate Balances Leave Report"
-msgstr "توليد تقرير أرصدة الإجازات"
+msgstr "ارصدة الاجازات"
 
 #. module: leave_custom
 #: model:ir.actions.act_window,name:leave_custom.action_leave_report_balances_wizard
 msgid "Generate Leave Balances Report"
-msgstr "توليد تقرير أرصدة الإجازات"
+msgstr "ارصدة الاجازات"
 
 #. module: leave_custom
 #: model_terms:ir.ui.view,arch_db:leave_custom.view_leave_report_balances_wizard_form
