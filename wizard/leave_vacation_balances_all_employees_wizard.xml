@@ -9,7 +9,7 @@
                     <field name="leave_type_ids" widget="many2many_tags"/>
                 </group>
                 <footer>
-                    <button name="action_generate_report" string="Generate Report" type="object" class="btn-primary"/>
+                    <button name="action_generate_report" string="Re calculate" type="object" class="btn-primary"/>
                     <button string="Cancel" class="btn-secondary" special="cancel"/>
                 </footer>
             </form>

@@ -24,17 +24,6 @@ class LeaveReportBalancesWizard(models.TransientModel):
         if not leaves:
             raise UserError(_("No leave records found."))
 
-        print("==== Leave Report ====")
-        for leave in leaves:
-            print("Employee: %s | Type: %s | From: %s | To: %s | Days: %s | State: %s" %
-                  (leave.employee_id.name,
-                   leave.holiday_status_id.name,
-                   leave.date_from,
-                   leave.date_to,
-                   leave.number_of_days,
-                   leave.state))
-        print("==== End of Report ====")
-
         return {
             'name': _('Leave Report'),
             'type': 'ir.actions.act_window',

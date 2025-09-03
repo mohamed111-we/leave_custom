@@ -63,8 +63,9 @@ msgstr "توليد تقرير الإجازات"
 
 #. module: leave_custom
 #: model_terms:ir.ui.view,arch_db:leave_custom.view_leave_report_balances_wizard_form
-msgid "Generate Report"
-msgstr "توليد التقرير"
+msgid "Re calculate"
+msgstr "إعادة الحساب"
+
 
 #. module: leave_custom
 #: model:ir.model.fields,field_description:leave_custom.field_leave_report_balances_wizard__id
